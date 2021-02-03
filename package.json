@@ -1,0 +1,27 @@
+{
+  "name": "11tylib",
+  "description": "11ty learnings.",
+  "version": "1.0.0",
+  "author": "Peter deHaan (https://about.me/peterdehaan)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11tylib/issues"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "axios": "^0.21.1",
+    "prettier": "^2.2.1"
+  },
+  "homepage": "https://github.com/pdehaan/11tylib#readme",
+  "keywords": ["eleventy", "11ty"],
+  "license": "MPL-2.0",
+  "main": ".eleventy.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11tylib.git"
+  },
+  "scripts": {
+    "build": "eleventy && prettier www --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
