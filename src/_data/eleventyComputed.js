@@ -1,3 +1,3 @@
 module.exports = {
-  author: "Peter deHaan (@pdehaan)"
+  author: "Peter deHaan (@pdehaan)",
 };

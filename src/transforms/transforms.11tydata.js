@@ -1,5 +1,3 @@
 module.exports = {
-  tags: [
-    "transforms"
-  ]
+  tags: ["transforms"],
 };

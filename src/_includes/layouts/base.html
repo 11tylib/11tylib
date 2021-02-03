@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>{{ title }}</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <div class="content">
+      <main data-datetime="{{ page.date | toISOString }}">
+        <header>
+          <h1>{{ title }}</h1>
+          {% gitclone repo %}
+        </header>
+        <div>{% include sponsor.md %} {{ content }}</div>
 
-<div class="content">
-  <main data-datetime="{{ page.date | toISOString }}">
-    <header>
-      <h1>{{ title }}</h1>
-      {% gitclone repo %}
-    </header>
-    {{ content }}
-    <footer>
-      <p>Author: {{ author }}</p>
-      <P>Date: {% time page.date %}</p>
-      {% if modified %}
-      <p>Modified {% time modified %}</p>
-      {% endif %}
-    </footer>
-  </main>
-</div>
-
-</body>
+        <footer>
+          <p>Author: {{ author }}</p>
+          <p>Date: {% time page.date %}</p>
+          {% if modified %}
+          <p>Modified {% time modified %}</p>
+          {% endif %}
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>

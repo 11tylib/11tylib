@@ -9,10 +9,14 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "axios": "^0.21.1",
+    "del": "^6.0.0",
     "prettier": "^2.2.1"
   },
   "homepage": "https://github.com/pdehaan/11tylib#readme",
-  "keywords": ["eleventy", "11ty"],
+  "keywords": [
+    "eleventy",
+    "11ty"
+  ],
   "license": "MPL-2.0",
   "main": ".eleventy.js",
   "private": true,
@@ -21,7 +25,10 @@
     "url": "git+https://github.com/pdehaan/11tylib.git"
   },
   "scripts": {
-    "build": "eleventy && prettier www --write",
+    "build": "eleventy",
+    "postbuild": "npm run format:output",
+    "format:input": "prettier src --write",
+    "format:output": "prettier www --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

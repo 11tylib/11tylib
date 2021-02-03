@@ -6,24 +6,18 @@ This is the homepage.
 
 Maybe 4-5 latest posts.
 
-Recent "how to" tagged content?
+Recent ["how to"](/howto/) tagged content?
 
-Show links to concepts such as:
+Eleventy supports oodles of languages, with the most common being:
 
-languages:
-- liquidjs
-- nunjucks
-- JavaScript (.11ty.js)
+- [LiquidJS](/languages/liquidjs/)
+- [Nunjucks](/languages/nunjucks/)
+- [JavaScript (.11ty.js)](/languages/javascript/)
+- Mention Markdown and it's Liquid/Nunjucks pre/postprocessor support?
 
 Other core concepts such as:
-- filters
-- plugins
-- shortcodes
-- transforms
 
-Not sure if this is an indication that content should be destructured further, such as:
-
-- /lang/liquidjs/
-- /core/filters/
-
-Keeps the top level cleaner, at the expense of deeper nesting.
+- [custom filters](/filters/)
+- [custom plugins](/plugins/)
+- [custom shortcodes](/shortcodes/)
+- [custom transforms](/transforms/)

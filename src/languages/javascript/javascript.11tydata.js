@@ -1,3 +1,3 @@
 module.exports = {
-  tags: ["plugins"],
+  tags: ["11tyjs"],
 };
